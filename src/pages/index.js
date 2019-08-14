@@ -154,7 +154,7 @@ const IndexPage = () => (
     <FullWidthWrapper>
       <InnerContainer>
         <HomeHeader>
-          <h3>I'm Kyle Gardner 🤙🏻</h3>
+          <h3>I'm Kyle Gardner 🤙</h3>
         </HomeHeader>
         {/* <HomeLocation>
           <p>☀️&nbsp;Newport&nbsp;Beach,&nbsp;CA</p>

@@ -1,10 +1,12 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "kylegardnerco",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "An about me site for a product manager and designer",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kyle Gardner <kyle.gardner92@gmail.com>",
   "dependencies": {
+    "@emotion/core": "^10.0.15",
+    "@emotion/styled": "^10.0.15",
     "gatsby": "^2.13.51",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-manifest": "^2.2.4",

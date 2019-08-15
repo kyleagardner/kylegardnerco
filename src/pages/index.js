@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "@emotion/styled"
@@ -46,6 +44,7 @@ const HomeLocation = styled.div`
   padding: 2rem 1rem 0 1rem;
   grid-column: 4/7;
   grid-row: 1/2;
+  font-weight: 700;
 `
 
 const HomeBody = styled.div`
@@ -77,7 +76,7 @@ const CTAContainer = styled.div`
   }
 `
 
-const MainCTA = styled(props => <a {...props} />)`
+const MainCTA = styled.a`
   text-decoration: none;
   max-width: 200px;
   text-align: center;
@@ -118,7 +117,7 @@ const SocialContainer = styled.div`
   }
 `
 
-const SocialLink = styled(props => <a {...props} />)`
+const SocialLink = styled.a`
   text-decoration: none;
   text-align: center;
   letter-spacing: 0.2px;
@@ -154,11 +153,21 @@ const IndexPage = () => (
     <FullWidthWrapper>
       <InnerContainer>
         <HomeHeader>
-          <h3>I'm Kyle Gardner 🕺🏻</h3>
+          <h3>
+            I'm Kyle Gardner{" "}
+            <span role="img" aria-labelledby="emoji-dancing man">
+              🕺🏻
+            </span>
+          </h3>
         </HomeHeader>
-        {/* <HomeLocation>
-          <p>☀️&nbsp;Newport&nbsp;Beach,&nbsp;CA</p>
-        </HomeLocation> */}
+        <HomeLocation>
+          <p>
+            <span role="img" aria-labelledby="emoji-sun">
+              ☀️
+            </span>
+            &nbsp;Newport&nbsp;Beach,&nbsp;CA
+          </p>
+        </HomeLocation>
         <HomeBody>
           <h1>
             A product manager & designer who connects humans with digital
@@ -171,19 +180,31 @@ const IndexPage = () => (
         </CTAContainer>
         <SocialContainer>
           <SocialLink href="https://www.linkedin.com/in/kyleagardner/">
-            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png" />
+            <img
+              alt="linkedin-social"
+              src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png"
+            />
             <p>LinkedIn</p>
           </SocialLink>
           <SocialLink href="https://dribbble.com/gardner">
-            <img src="https://cdn.worldvectorlogo.com/logos/dribbble-icon-1.svg" />
+            <img
+              alt="dribbble-social"
+              src="https://cdn.worldvectorlogo.com/logos/dribbble-icon-1.svg"
+            />
             <p>Dribbble</p>
           </SocialLink>
           <SocialLink href="https://open.spotify.com/user/kyleagardner?si=fsHo0HgZQRudddj07Y_t2g">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1024px-Spotify_logo_without_text.svg.png" />
+            <img
+              alt="spotify-social"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1024px-Spotify_logo_without_text.svg.png"
+            />
             <p>Spotify</p>
           </SocialLink>
           <SocialLink href="https://twitter.com/kyleagardner">
-            <img src="http://www.transparentpng.com/thumb/twitter/pin-twitter-logo-png-images-22.png" />
+            <img
+              alt="twitter-social"
+              src="http://www.transparentpng.com/thumb/twitter/pin-twitter-logo-png-images-22.png"
+            />
             <p>Twitter</p>
           </SocialLink>
         </SocialContainer>
